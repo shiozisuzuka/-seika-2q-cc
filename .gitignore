@@ -1,0 +1,8 @@
+# この.ignoring ファイルによるファイルの無視設定については以下のURLに詳細がある
+# https://help.github.com/articles/ignoring-files/
+
+# npm install でインストールされた外部ライブラリが追跡されないように（git上で管理されないように）設定
+/node_modules
+
+# macosが作成するキャッシュファイルが追跡されないように設定
+.DS_Store

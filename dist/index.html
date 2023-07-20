@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        
+        /*  */
+        /* CSS for Swiper */
+        /*  */
+        #swiper-container{
+            display: flex;
+            justify-content: center;
+        }
+        .swiper {
+            position: relative;
+            width: 500px;
+            height: 300px;
+        }
+        .swiper-title{
+            text-align: center;
+            font-weight: bold;
+        }
+        .swiper-slide div{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide div img{
+            width: 40%;
+            height: auto;
+        }
+
+        /*  */
+        /* CSS for JustValidate */
+        /*  */
+        #basic_form{
+            width: 600px;    
+            padding: 50px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            background-color: rgb(225, 225, 225);
+            border-radius: 10px;
+        }
+
+        #basic_form > div{
+            padding: 10px;
+        }
+
+        #basic_form label{
+            display: flex;
+            font-weight: bold;
+        }
+
+        #basic_form label span{
+            display: inline-block;
+            width: 150px;
+        }
+
+        #basic_form label div{
+            flex: 1;
+        }
+
+        #basic_form input{
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #basic_form button{
+            display: block;
+            border: 0;
+            color: #FFF;
+            padding: 10px;
+            width: 200px;
+            margin: 20px auto 0 auto;
+            background-color: #0144ff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Swiper -->
+    <h2><a href="https://swiperjs.com/" target="_blank">Swiper</a></h2>
+
+    <div id="swiper-container">
+
+        <div>
+            <!-- Slider main container -->
+            <!-- 複数のSwiperを識別するため、 classに swiper-1 を設定-->
+            <div class="swiper swiper-1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar swiper-scrollbar-1"></div> -->
+            </div>
+            <!-- タイトル表示用 -->
+            <div id="swiper-title" class="swiper-title"></div>
+        </div>
+
+        <div>
+            <!-- Slider main container -->
+            <!-- 複数のSwiperを識別するため、 classに swiper-2 を設定-->
+            <div class="swiper swiper-2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="face/buranko_boy_sad.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="face/buranko_girl_sad.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="face/buranko_girl_smile.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <!-- タイトル表示用 -->
+            <div id="swiper-title-2" class="swiper-title"></div>
+        </div>
+
+    </div>
+
+  <script>
+  </script>
+
+	<form id="basic_form">
+		<div>
+			<span>名前</span>
+			<input id="basic_name" name="name"
+			type="text" placeholder="Enter your name" />
+		</div>
+		<div>
+			<span>メールアドレス</span>
+			<input id="basic_email"  name="email" type="text" placeholder="Enter your email" />
+		</div>
+		<div>
+			<span>パスワード</span>
+			<input id="basic_password" name="password" type="text" placeholder="Enter your password" />
+		</div>	
+		<div>
+			<span>年齢</span>
+			<input id="basic_age" name="age" type="text" placeholder="Enter your age" />
+		</div>
+		<div>
+			<span>住所</span>
+			<input id="basic_addores" name="addores" type="text" placeholder="Enter your addores" />
+		</div>
+		<div>
+			<button type="submit">送信</button>
+		</div>
+	  </form>
+
+	  <script src="main.js"></script>
+ 
+</body>
+</html>

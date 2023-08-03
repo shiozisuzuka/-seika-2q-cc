@@ -7,6 +7,7 @@
 - 2
 - 3
 > 引用風
+> https://ja.wikipedia.org/wiki/サカバンバスピス
 ---
 ## コードを書くとき
 ```javascript
